@@ -1,3 +1,4 @@
+# Using the given vector and function I kept recieving the error "Error in myMean(assignment2) : object 'assignment' not found".
 
 # This was due to the variables within the function "myMean" not having any correlation with the "assignment2" vector that it was supposed to reference.
 # Instead of "assignment2" the variable used in the function were "assignment" and "someData" neither of which have a reference point.
