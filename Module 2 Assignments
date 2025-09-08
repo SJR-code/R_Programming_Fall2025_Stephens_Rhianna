@@ -12,3 +12,5 @@ myMean<-function(assignment2){return(sum(assignment2)/length(assignment2))}
 
 #Test
 myMean(assignment2)
+
+# Blog link: https://rsrprograms.blogspot.com/2025/09/module-2-assignment.html
