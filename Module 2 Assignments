@@ -3,7 +3,7 @@
 # This was due to the variables within the function "myMean" not having any correlation with the "assignment2" vector that it was supposed to reference.
 # Instead of "assignment2" the variable used in the function were "assignment" and "someData" neither of which have a reference point.
 
-# Corrections
+# Corrected function which returns the right mean(19.25).
 # Creating the Vector
 assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
 
