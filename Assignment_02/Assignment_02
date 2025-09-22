@@ -1,1 +1,16 @@
+# Using the given vector and function I kept receiving the error "Error in myMean(assignment2) : object 'assignment' not found".
 
+# This was due to the variables within the function "myMean" not having any correlation with the "assignment2" vector that it was supposed to reference.
+# Instead of "assignment2" the variable used in the function were "assignment" and "someData" neither of which have a reference point.
+
+# Corrected function which returns the right mean(19.25).
+# Creating the Vector
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+
+#Forming the function
+myMean<-function(assignment2){return(sum(assignment2)/length(assignment2))}
+
+#Test
+myMean(assignment2)
+
+# Blog link: https://rsrprograms.blogspot.com/2025/09/module-2-assignment.html
