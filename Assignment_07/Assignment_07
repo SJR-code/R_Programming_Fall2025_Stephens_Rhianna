@@ -21,3 +21,5 @@ s4_obj <- new("student_s4", name = "Spider", classtype = "Arachnida", families =
 
 print(s3_obj)
 print(s4_obj)
+summary(s3_obj)
+summary(s4_obj)
