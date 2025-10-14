@@ -14,12 +14,10 @@ attributes(data)
  # All methods were successful
 
 #3
-s3_obj <- list(name = "Rhianna", age = 23, GPA = 2.6)
-class(s3_obj) <- "student_s3"
-setClass("student_s4", slots = c(name = "character", age = "numeric", GPA = "numeric"))
-s4_obj <- new("student_s4", name = "Rhianna", age = 23, GPA = 2.6)
+s3_obj <- list(name = "Spider", classtype = "Arachnida", families = 136)
+class(s3_obj) <- "Animal_s3"
+setClass("student_s4", slots = c(name = "character", classtype = "character", families = "numeric"))
+s4_obj <- new("student_s4", name = "Spider", classtype = "Arachnida", families = 136)
 
 print(s3_obj)
 print(s4_obj)
-summary(s3_obj)
-summary(s4_obj)
