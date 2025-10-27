@@ -1,0 +1,41 @@
+#library
+library(lattice)
+library(ggplot2)
+
+myData <- mtcars
+
+#1
+# Scatter plot
+plot(myData$hp, myData$mpg,
+     main   = "Horsepower vs. MPG",
+     xlab   = "Horsepower",
+     ylab   = "Miles per gallon")
+
+# Histogram
+hist(myData$mpg,
+     main   = "Distribution of MPG",
+     xlab   = "MPG")
+***
+#2
+# Conditional scatter plot (small multiples)
+xyplot(mpg ~ hp | factor(cyl),
+       data = myData,
+       main = "Lattice: mpg vs. hp by CYL")
+
+# Box-and-whisker plot
+bwplot(hp ~ factor(cyl),
+       data =myData,
+       main = "Lattice: Horsepower by CYL")
+***
+#3
+# Scatter plot with smoothing
+ggplot(myData, aes(x = mpg, y = hp, color = factor(cyl))) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title = "ggplot2: HP vs. MPG with trend by CYL")
+
+# Faceted histogram
+ggplot(myData, aes(hp)) +
+  geom_histogram(binwidth = 1) +
+  facet_wrap(~ cyl) +
+  labs(title = "ggplot2: istribution by horsepower")
