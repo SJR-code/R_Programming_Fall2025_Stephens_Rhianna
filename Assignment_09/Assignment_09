@@ -15,7 +15,7 @@ plot(myData$hp, myData$mpg,
 hist(myData$mpg,
      main   = "Distribution of MPG",
      xlab   = "MPG")
-***
+
 #2
 # Conditional scatter plot (small multiples)
 xyplot(mpg ~ hp | factor(cyl),
@@ -26,7 +26,7 @@ xyplot(mpg ~ hp | factor(cyl),
 bwplot(hp ~ factor(cyl),
        data =myData,
        main = "Lattice: Horsepower by CYL")
-***
+
 #3
 # Scatter plot with smoothing
 ggplot(myData, aes(x = mpg, y = hp, color = factor(cyl))) +
