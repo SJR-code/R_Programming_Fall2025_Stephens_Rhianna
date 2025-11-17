@@ -1,0 +1,34 @@
+---
+title: "M12 Assignment"
+author: "Rhianna Stephens"
+date: "2025-11-17"
+output: html_document
+---
+R Markdown is a document format that is available to use for HTML, PDF, and MS Word documents. It allows for a clear separation between the code chunks and any narrative text.
+```{r setup, message = FALSE}
+# Library
+library(ggplot2)
+library(inline)
+
+
+```
+
+## R Markdown
+
+
+
+```{r cars}
+# Plot
+ggplot(mtcars, aes(x = hp, y = mpg, fill = cyl))+
+  geom_point()
+```
+
+## LaTex expression
+
+
+```{r pressure, echo=FALSE}
+
+
+```
+
+Reflection: I think R Markdown provides a simpler way to separate and make notes on your code chunks. In comparison with plain reports, R Markdown allows for each code chunk to be separated with a change in the background color and for any generated outputs to be visualized right below the code which is very helpful. I did run into issues trying to set up the LaTex expression though, I was not able to get the output to generate.
